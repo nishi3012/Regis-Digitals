@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Regis Digitals</title>
+<meta name="description" content="Six services, built to work together. What each one covers, what’s in it, and how to tell which one you need.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div class="page-loader" id="pageLoader">
+  <svg width="26" height="17" viewBox="0 0 20 13"><rect width="9" height="13" rx="4.5" fill="currentColor"/><rect x="11" width="9" height="13" rx="4.5" fill="currentColor"/></svg>
+  Regis Digitals
+</div>
+<div class="progress" id="progress"></div>
+
+<!-- NAVBAR -->
+<header class="nav-header">
+  <nav class="nav-pill">
+    <a href="index.html" class="nav-logo">
+      <svg width="20" height="13" viewBox="0 0 20 13"><rect width="9" height="13" rx="4.5" fill="currentColor"/><rect x="11" width="9" height="13" rx="4.5" fill="currentColor"/></svg>
+      Regis Digitals
+    </a>
+    <div class="nav-pill-divider"></div>
+    <button class="nav-menu-btn" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <svg class="nav-menu-grid" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><rect width="5" height="5" rx="1"/><rect x="7" width="5" height="5" rx="1"/><rect y="7" width="5" height="5" rx="1"/><rect x="7" y="7" width="5" height="5" rx="1"/></svg>
+      <span>Menu</span>
+    </button>
+  </nav>
+</header>
+
+<!-- FULLSCREEN MENU -->
+<div class="nav-overlay" id="mobileNav" aria-hidden="true">
+  <div class="nav-overlay-inner">
+    <p class="nav-overlay-title">Menu</p>
+    <ul class="nav-overlay-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="nav-link-active">Services</a></li>
+      <li><a href="mailto:mayank@regisdigitals.com">Contact</a></li>
+    </ul>
+    <div class="nav-overlay-footer">
+      <div class="nav-overlay-col">
+        <p class="nav-overlay-col-label">Contact</p>
+        <a href="mailto:mayank@regisdigitals.com">mayank@regisdigitals.com</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero.png" alt="" aria-hidden="true" />
+      <div class="hero-bg-overlay"></div>
+    </div>
+
+    <div class="hero-body">
+      <div class="eyebrow reveal-hero"><span class="pulse-dot"></span>Services</div>
+
+      <h1 class="hero-title reveal-hero">Start with your problem. We’ll tell you which of these six you need.</h1>
+
+      <p class="hero-sub reveal-hero-delay">Six services, built to work together. What each one covers, what’s in it, and how to tell which one you need.</p>
+
+      <div class="hero-actions reveal-hero-delay2">
+        <!-- Replace # with your WhatsApp link: https://wa.me/<number> -->
+        <a href="#" class="btn-chat-now magnetic">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat Now
+        </a>
+      </div>
+
+      <a href="mailto:mayank@regisdigitals.com" class="hero-email reveal-hero-delay2">↪ mayank@regisdigitals.com</a>
+    </div>
+
+    <!-- CLIENT LOGO MARQUEE -->
+    <div class="logos-section reveal-hero-delay3">
+      <div class="logos-track-wrap">
+        <div class="logos-inner" id="logoMarquee">
+          <div class="logo-item logo-text">ISAR</div>
+          <div class="logo-item logo-text">Indira IVF</div>
+          <div class="logo-item logo-text">SunAct</div>
+          <div class="logo-item logo-text">P.D. Hinduja</div>
+          <div class="logo-item logo-text">Maharashtra Shasan</div>
+          <div class="logo-item logo-text">FOGSI</div>
+          <!-- duplicate for seamless loop -->
+          <div class="logo-item logo-text">ISAR</div>
+          <div class="logo-item logo-text">Indira IVF</div>
+          <div class="logo-item logo-text">SunAct</div>
+          <div class="logo-item logo-text">P.D. Hinduja</div>
+          <div class="logo-item logo-text">Maharashtra Shasan</div>
+          <div class="logo-item logo-text">FOGSI</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO + SERVICE INDEX -->
+  <section class="weeks wrap">
+    <div class="weeks-head reveal"><span>Regis Digitals</span><span>Services</span></div>
+    <div class="weeks-grid">
+      <h2 class="big reveal">A patient may see your website, then your Instagram, then a film. Whichever they see first, it should look and sound like the same doctor.</h2>
+      <div class="week-list" id="weekList"></div>
+    </div>
+  </section>
+
+  <!-- SIX SERVICE SECTIONS (generated by services.js) -->
+  <div id="serviceSections"></div>
+
+  <!-- CTA -->
+  <section class="cta dark">
+    <div class="wrap">
+      <span class="small-label reveal">Let’s talk</span>
+      <h2 class="cta-title reveal">Start with your problem. We’ll tell you which of these six you need.</h2>
+      <a class="btn btn-light reveal" href="mailto:mayank@regisdigitals.com"><span>mayank@regisdigitals.com</span></a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="dark">
+  <div class="wrap foot-grid">
+    <div><p class="foot-label">Studio</p><p>Regis Digitals</p></div>
+    <div><a class="mail-link" href="mailto:mayank@regisdigitals.com">↪ mayank@regisdigitals.com</a></div>
+    <div>
+      <p class="foot-label">Company</p>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom"><span>© 2026 Regis Digitals. All rights reserved</span></div>
+</footer>
+
+<script src="services.js"></script>
+</body>
+</html>

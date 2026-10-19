@@ -1,548 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desses — Product Design & AI + Framer Development</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Desses — Product Design &amp; AI + Framer Development</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
-
-  <!-- Page loader -->
-  <div class="page-loader" id="pageLoader">
-    <div class="loader-logo">Desses</div>
-    <div class="loader-bar"><div class="loader-fill"></div></div>
-  </div>
-
-  <!-- ===================================================
+<!-- Page loader -->
+<div class="page-loader" id="pageLoader">
+<div class="loader-logo">Desses</div>
+<div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+<!-- ===================================================
        HERO
        =================================================== -->
-  <section class="hero" id="hero">
-
-    <!-- bg image + dark overlay -->
-    <div class="hero-bg">
-      <img src="images/hero.png" alt="" aria-hidden="true" />
-      <div class="hero-bg-overlay"></div>
-    </div>
-
-    <!-- compact centered pill nav -->
-    <header class="nav-header" id="navHeader" style="margin-top: 40px;">
-      <nav class="nav-inner">
-        <div class="nav-pill">
-          <a href="#" class="nav-logo">
-            <svg width="20" height="13" viewBox="0 0 20 13" fill="none">
-              <rect x="0" y="0" width="9" height="13" rx="4.5" fill="white" opacity="0.9"/>
-              <rect x="11" y="0" width="9" height="13" rx="4.5" fill="white" opacity="0.9"/>
-            </svg>
+<section class="hero" id="hero">
+<!-- bg image + dark overlay -->
+<div class="hero-bg">
+<img alt="" aria-hidden="true" loading="eager"/>
+<div class="hero-bg-overlay"></div>
+</div>
+<!-- compact centered pill nav -->
+<header class="nav-header" id="navHeader">
+<nav class="nav-inner">
+<div class="nav-pill">
+<a class="nav-logo" href="#">
+<svg fill="none" height="13" viewbox="0 0 20 13" width="20">
+<rect fill="white" height="13" opacity="0.9" rx="4.5" width="9" x="0" y="0"></rect>
+<rect fill="white" height="13" opacity="0.9" rx="4.5" width="9" x="11" y="0"></rect>
+</svg>
             Desses
           </a>
-          <div class="nav-pill-divider"></div>
-          <button class="nav-menu-btn" id="hamburger" aria-label="Menu" aria-expanded="false">
-            <svg class="nav-menu-grid" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-              <rect x="0" y="0" width="5" height="5" rx="1"/>
-              <rect x="7" y="0" width="5" height="5" rx="1"/>
-              <rect x="0" y="7" width="5" height="5" rx="1"/>
-              <rect x="7" y="7" width="5" height="5" rx="1"/>
-            </svg>
-            <span class="nav-menu-label">Menu</span>
-          </button>
-        </div>
-      </nav>
-
-      <!-- fullscreen overlay -->
-      <div class="nav-overlay" id="mobileNav">
-        <div class="nav-overlay-inner">
-          <p class="nav-overlay-title">Menu</p>
-          <ul class="nav-overlay-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#" class="nav-link-active">Cases</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Insights</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="nav-overlay-footer">
-            <div class="nav-overlay-col">
-              <p class="nav-overlay-col-label">Social media</p>
-              <a href="https://www.linkedin.com/in/desses" target="_blank">LinkedIn</a>
-              <a href="https://x.com/oskarmieta" target="_blank">x.com</a>
-            </div>
-            <div class="nav-overlay-col">
-              <p class="nav-overlay-col-label">Contact</p>
-              <a href="https://desses.co/contact" target="_blank">Book an intro call</a>
-              <a href="mailto:contact@desses.co">contact@desses.co</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- hero text content -->
-    <div class="hero-body">
-
-      <h1 class="hero-title reveal-hero">
-        A Medical Marketing Agency
-      </h1>
-
-      
-      <div>
-        <div style="color:darkgray;">
-          <span>The care is good. We diagnose. the problem and <br> prescribe only what actually works.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        </div>
-      </div>
-
-
-      <div class="hero-actions reveal-hero-delay" style="margin-top: 30px;">
-        <a href="#" class="btn-chat-now magnetic">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<div class="nav-pill-divider"></div>
+<button aria-expanded="false" aria-label="Menu" class="nav-menu-btn" id="hamburger">
+<svg class="nav-menu-grid" fill="currentColor" height="12" viewbox="0 0 12 12" width="12">
+<rect height="5" rx="1" width="5" x="0" y="0"></rect>
+<rect height="5" rx="1" width="5" x="7" y="0"></rect>
+<rect height="5" rx="1" width="5" x="0" y="7"></rect>
+<rect height="5" rx="1" width="5" x="7" y="7"></rect>
+</svg>
+<span class="nav-menu-label">Menu</span>
+</button>
+</div>
+</nav>
+<!-- fullscreen overlay -->
+<div class="nav-overlay" id="mobileNav">
+<div class="nav-overlay-inner">
+<p class="nav-overlay-title">Menu</p>
+<ul class="nav-overlay-links">
+<li><a class="nav-link-active" href="#hero">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a class="" href="#">Work Page</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="nav-overlay-footer">
+<div class="nav-overlay-col">
+<p class="nav-overlay-col-label">Social media</p>
+<a href="https://www.linkedin.com/in/desses" target="_blank">LinkedIn</a>
+<a href="https://x.com/oskarmieta" target="_blank">x.com</a>
+</div>
+<div class="nav-overlay-col">
+<p class="nav-overlay-col-label">Contact</p>
+<a href="https://desses.co/contact" target="_blank">Book an intro call</a>
+<a href="mailto:contact@desses.co">contact@desses.co</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- hero text content -->
+<div class="hero-body">
+<h1 class="hero-title reveal-hero">A Medical 
+        <h1 class="hero-title reveal-hero" style="color: grey;">Marketing Agency</h1></h1>
+<p class="hero-description reveal-hero-delay">The care is good. We diagnose. the problem and prescribe only what actually works.</p>
+<div class="hero-actions reveal-hero-delay2">
+<a class="btn-chat-now magnetic" href="#">
+<svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
           Chat Now
         </a>
-      </div>
-
-       <a href="mailto:mayank@regisdigitals.com" class="hero-email" style="margin-top:10px;display:block;font-size: 15px;">↪ mayank@regisdigitals.com</a>
-      </div>
-    </div>
-
-      <!-- CLIENT LOGO MARQUEE -->
-      <section class="logos-section reveal-hero-delay3">
-        <div class="logos-track-wrap">
-          <div class="logos-inner" id="logoMarquee">
-            <div class="logo-item logo-text">ISAR</div>
-            <div class="logo-item logo-text">Indira IVF</div>
-            <div class="logo-item logo-text">SunAct</div>
-            <div class="logo-item logo-text">P.D. Hinduja</div>
-            <div class="logo-item logo-text">Maharashtra Shasan</div>
-            <div class="logo-item logo-text">FOGSI</div>
-            <!-- duplicate for seamless loop -->
-            <div class="logo-item logo-text">ISAR</div>
-            <div class="logo-item logo-text">Indira IVF</div>
-            <div class="logo-item logo-text">SunAct</div>
-            <div class="logo-item logo-text">P.D. Hinduja</div>
-            <div class="logo-item logo-text">Maharashtra Shasan</div>
-            <div class="logo-item logo-text">FOGSI</div>
-          </div>
-        </div>
-      </section>
-
-      
-
-  </section><!-- /hero -->
-
-  <main>
-
-    <!-- ===== ABOUT ===== -->
-    <section class="about-section container" data-reveal>
-      <div class="about-grid">
-        <div style="max-width:700px;margin-inline:auto;text-align:center;">
-          <h2 id="readingText" style="font-size:clamp(2.2rem,4.5vw,4rem);font-weight:400;line-height:1.15;letter-spacing:-0.03em;"></h2>
-          <p class="about-specialist-sub">Healthcare is all we do, so you never have to explain how it works.</p>
-        </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SERVICES ===== -->
-
-        <div class="about-right-col" style="margin-left: 80px;">
-          <span class="pill-label" style="font-size: 16px;color: black; border-color: darkgrey;">Services</span>
-        </div>
-
-    <section class="services-section container" data-reveal>
-      <div class="services-layout">
-
-        <!-- LEFT: heading + description -->
-        <div class="services-left">
-          <h1 style="font-size:clamp(1.6rem,2.8vw,2.4rem);font-weight:400;letter-spacing:-0.03em;line-height:1.15;margin-top: 20px;">One team for everything between <br> <span style="font-size: 24px;">“we should do something” and “it worked”.</span></h1>
-          <p class="body-muted" style="margin-top:20px;max-width:340px;font-size: 135%;">Most practices end up with a social agency, a web company and a video freelancer who have never spoken to each other, and the doctor becomes the project manager. Here, the strategy, content, websites and campaigns are planned together by one team.</p>
-          <a href="https://desses.co/contact" class="svc-cta-btn magnetic" target="_blank" style="margin-top:28px;">
+</div>
+<a class="hero-email reveal-hero-delay3" href="mailto:mayank@regisdigitals.com" style="border: 2px solid rgb(58, 56, 56);width: fit-content;padding: 10px 20px;font-size: 16px;border-radius: 25px"> mayank@regisdigitals.com</a>
+</div>
+<!-- CLIENT LOGO MARQUEE -->
+<section class="logos-section reveal-hero-delay3">
+<div class="logos-track-wrap" style="padding-bottom: 20px;">
+<div class="logos-inner" id="logoMarquee">
+<div class="logo-item logo-text">ISAR</div>
+<div class="logo-item logo-text">Indira IVF</div>
+<div class="logo-item logo-text">SunAct</div>
+<div class="logo-item logo-text">P.D. Hinduja</div>
+<div class="logo-item logo-text">Maharashtra Shasan</div>
+<div class="logo-item logo-text">FOGSI</div>
+<!-- duplicate for seamless loop -->
+<div class="logo-item logo-text">ISAR</div>
+<div class="logo-item logo-text">Indira IVF</div>
+<div class="logo-item logo-text">SunAct</div>
+<div class="logo-item logo-text">P.D. Hinduja</div>
+<div class="logo-item logo-text">Maharashtra Shasan</div>
+<div class="logo-item logo-text">FOGSI</div>
+</div>
+</div>
+</section>
+</section><!-- /hero -->
+<main>
+<!-- ===== ABOUT ===== -->
+<section class="about-section container" data-reveal="">
+<div class="about-grid" style="margin-left: 300px;">
+<div>
+<p id="readingText" style="text-align: center;"></p>
+<p class="about-specialist-sub" style="margin-bottom: 20px;font-size: 24px;">Healthcare is all we do, so you never have to explain how it works.</p>
+</div>
+</div>
+</section>
+<!-- ===== SERVICES ===== -->
+<section class="services-section container" data-reveal="">
+<div class="services-layout">
+<!-- LEFT: heading + description -->
+<div class="services-left"><div class="about-right-col">
+<span class="pill-label" style="font-size: 16px;color: black;"><span class="blue-bullet">• </span>Services</span>
+</div>
+<h1>One team for everything between <span style="color: gray;font-size:20px;">“we should do something” and “it worked”.</span></h1>
+<p class="body-muted">Most practices end up with a social agency, a web company and a video freelancer who have never spoken to each other, and the doctor becomes the project manager. Here, the strategy, content, websites and campaigns are planned together by one team.</p>
+<a class="svc-cta-btn magnetic" href="https://desses.co/contact" style="margin-top:28px;" target="_blank">
             Book an Intro Call
             <span class="svc-cta-arrow">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/></svg>
-            </span>
-          </a>
-        </div>
+<svg fill="currentColor" height="16" viewbox="0 0 16 16" width="16"><path d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z" fill-rule="evenodd"></path></svg>
+</span>
+</a>
+</div>
+<!-- RIGHT: cards in vertical column -->
+<div class="services-grid" style="width: 500px;height: 400px;display: flex;flex-direction: column;justify-content: space-between;margin-left: -40px;">
+<div class="svc-card" data-stagger="">
+<div class="svc-head"><h3 class="svc-title">Strategy &amp; Growth Advisory</h3><span class="svc-arrow">↗</span></div>
+<p class="svc-body">The most expensive marketing is the kind done without knowing why. We start by finding what is actually limiting growth, which is often not what the practice assumed. Only then do we decide what to make, where to run it, and what to leave alone.
+<ul class="svc-tags"><li>Growth Diagnosis</li><li>Marketing roadmap</li><li>Positioning</li><li>Budget planning</li><li>Monthly advisory</li></ul>
+</p></div>
+<div class="svc-card" data-stagger="">
+<div class="svc-head"><h3 class="svc-title">AI Content &amp; Production</h3><span class="svc-arrow">↗</span></div>
+<p class="svc-body">AI has made medical content faster and cheaper to produce. The risk is accuracy and tone. We use it for speed and keep a medical eye on every frame, so nothing goes out that you would have to walk back. No invented patients, no invented outcomes.</p>
+<ul class="svc-tags"><li>AI video &amp; films</li><li>Short-form reels</li><li>Patient-education content</li><li>Copywriting</li><li>Design</li></ul>
+</div>
+<div class="svc-card" data-stagger="">
+<div class="svc-head"><h3 class="svc-title">Social Media Management</h3><span class="svc-arrow">↗</span></div>
+<p class="svc-body">For a doctor, social media isn’t about going viral. It’s about a patient finding you, recognising your name and trusting you before they walk in. Consistency matters more than cleverness, so we set a steady rhythm and keep to it.</p>
+<ul class="svc-tags"><li>Instagram</li><li>YouTube</li><li>LinkedIn</li><li>Content calendars</li><li>Community &amp; reporting</li></ul>
+</div>
+<div class="svc-card" data-stagger="">
+<div class="svc-head"><h3 class="svc-title">Websites &amp; Discoverability</h3><span class="svc-arrow">↗</span></div>
+<p class="svc-body">Most patients judge a clinic by its website before they ever call. Increasingly they ask Google or an AI tool first, and those can only recommend you if your site is built to be read by them. We build for both.</p>
+<ul class="svc-tags" style="font-size: 20px;"><li>Website design &amp; build</li><li>SEO</li><li>Google Business Profile</li><li>AI-search readiness</li></ul>
+</div>
+<div class="svc-card" data-stagger="">
+<div class="svc-head"><h3 class="svc-title">Campaigns</h3><span class="svc-arrow">↗</span></div>
+<p class="svc-body">A launch depends more on planning than on budget, whether it’s a new machine, a service or an event. Healthcare advertising also has rules many agencies don’t know, so we plan inside them from day one.</p>
+<ul class="svc-tags" style="font-size: 20px;"><li>Service &amp; machine launches</li><li>Performance marketing</li><li>Event &amp; awareness campaigns</li></ul>
+</div>
+<div class="svc-card" data-stagger="">
+<div class="svc-head"><h3 class="svc-title">Medical Leadership &amp; Reputation</h3><span class="svc-arrow">↗</span></div>
+<p class="svc-body">Growth isn’t only more patients. It can be a society presidency, a scientific programme, or a seat at the table in your field. This work is rarely offered because few agencies understand how medical bodies actually operate. We do.</p>
+<ul class="svc-tags" style="font-size: 20px;"><li>Society &amp; presidency campaigns</li><li>Scientific programme planning</li><li>KOL collaborations</li><li>Awards &amp; recognition</li></ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== FEATURED CASES ===== -->
+<section class="cases-section container" data-reveal="">
+<div class="cases-featured-layout">
+<div class="cases-featured-left">
+<div class="cases-header-top">
+<span class="pill-label" style="font-size:13px;">Featured Cases</span>
+<h2 class="h2 reveal-text">A few projects worth showing. Each one built around a real problem</h2>
+<p class="body-muted" style="margin-top:12px;">A closer look at the work, the thinking behind it, and what it had to solve.</p>
+</div>
+<div class="cases-grid-2col">
+<a class="case-card-v2" href="https://desses.co/cases/chargeblock" target="_blank">
+<div class="case-v2-img image-placeholder">
+<!-- <img src="images/chargeblock.png" alt="ChargeBlock" /> -->
+<!-- <div class="case-overlay-tag">Energy Sector</div> -->
+</div>
+<div class="case-v2-info">
+<span class="case-v2-name">Medical Leadership</span>
+<h2>Dr. Archana Basser</h2>
+<p>A presidency campaign, run end to end. IG Account</p>
+<span class="case-v2-arrow">↗</span>
+</div>
+</a>
+<a class="case-card-v2" href="https://aespire.eu/" target="_blank">
+<div class="case-v2-img image-placeholder">
+<img alt="AESPIRE" data-original-src="images/aespire.png" loading="lazy"/>
+<div class="case-overlay-tag">Sharefunding Real Estate</div>
+</div>
+<div class="case-v2-info">
+<span class="case-v2-name">Website</span>
+<h2>ISAR Website</h2>
+<p>Show the website</p>
+<span class="case-v2-arrow">↗</span>
+</div>
+</a>
+<a class="case-card-v2" href="https://desses.co/cases/robotx" target="_blank">
+<div class="case-v2-img image-placeholder">
+<img alt="RobotX" data-original-src="images/robotx.png" loading="lazy"/>
+<div class="case-overlay-tag">AI Powered Audit</div>
+</div>
+<div class="case-v2-info">
+<span class="case-v2-name">AI Content &amp; Production</span>
+<h2>Indira IVF Videos</h2>
+<p>AI films and campaign content for a fertility brand</p>
+<span class="case-v2-arrow">↗</span>
+</div>
+</a>
+<a class="case-card-v2" href="https://desses.co/cases/sully.ai" target="_blank">
+<div class="case-v2-img image-placeholder">
+<img alt="Sully.ai" data-original-src="images/sully.png" loading="lazy"/>
+<div class="case-overlay-tag">AI Healthcare</div>
+</div>
+<div class="case-v2-info">
+<span class="case-v2-name">Websites &amp; Discoverability</span>
+<h2>Dr. Rohan and Dr. Ameet Patki</h2>
+<p>A clinic website built to be found and trusted</p>
+<span class="case-v2-arrow">↗</span>
+</div>
+</a>
+</div>
+</div>
+<div class="cases-featured-right">
+<div class="cases-photo-grid">
 
-        <!-- RIGHT: cards in vertical column -->
-        <div class="services-grid" style="grid-template-columns:1fr;">
-          <div class="svc-card" data-stagger>
-            <div class="svc-head"><h1>Strategy & Growth Advisory</h1><span class="svc-arrow">↗</span></div>
-            <h1 class="svc-body">The most expensive marketing is the kind done without knowing why. We start by finding what is actually limiting growth, which is often not what the practice assumed. Only then do we decide what to make, where to run it, and what to leave alone.</h2>
-            <ul class="svc-tags"><li>Growth Diagnosis</li><li>Marketing roadmap</li><li>Positioning</li><li>Budget planning</li><li>Monthly advisory</li></ul>
-          </div>
-          <div class="svc-card" data-stagger>
-            <div class="svc-head"><h1>AI Content & Production</h1><span class="svc-arrow">↗</span></div>
-            <h2 class="svc-body">AI has made medical content faster and cheaper to produce. The risk is accuracy and tone. We use it for speed and keep a medical eye on every frame, so nothing goes out that you would have to walk back. No invented patients, no invented outcomes.</h2>
-            <ul class="svc-tags"><li>AI video & films</li><li>Short-form reels</li><li>Patient-education content</li><li>Copywriting</li><li>Design</li></ul>
-          </div>
-          <div class="svc-card" data-stagger>
-            <div class="svc-head"><h1>Social Media Management</h1><span class="svc-arrow">↗</span></div>
-            <h2 class="svc-body">For a doctor, social media isn’t about going viral. It’s about a patient finding you, recognising your name and trusting you before they walk in. Consistency matters more than cleverness, so we set a steady rhythm and keep to it.</h2>
-            <ul class="svc-tags"><li>Instagram</li><li>YouTube</li><li>LinkedIn</li><li>Content calendars</li><li>Community & reporting</li></ul>
-          </div>
-          <div class="svc-card" data-stagger>
-            <div class="svc-head"><h1>Websites & Discoverability</h1><span class="svc-arrow">↗</span></div>
-            <h2 class="svc-body">Most patients judge a clinic by its website before they ever call. Increasingly they ask Google or an AI tool first, and those can only recommend you if your site is built to be read by them. We build for both.</h2>
-            <ul class="svc-tags" style="font-size: 20px;"><li>Website design & build</li><li>SEO</li><li>Google Business Profile</li><li>AI-search readiness</li></ul>
-          </div>
-          <div class="svc-card" data-stagger>
-            <div class="svc-head"><h1>Campaigns</h1><span class="svc-arrow">↗</span></div>
-            <h2 class="svc-body">A launch depends more on planning than on budget, whether it’s a new machine, a service or an event. Healthcare advertising also has rules many agencies don’t know, so we plan inside them from day one.</h2>
-            <ul class="svc-tags" style="font-size: 20px;"><li>Service & machine launches</li><li>Performance marketing</li><li>Event & awareness campaigns</li></ul>
-          </div>
-          <div class="svc-card" data-stagger>
-            <div class="svc-head"><h1>Medical Leadership & Reputation</h1><span class="svc-arrow">↗</span></div>
-            <h2 class="svc-body">Growth isn’t only more patients. It can be a society presidency, a scientific programme, or a seat at the table in your field. This work is rarely offered because few agencies understand how medical bodies actually operate. We do.</h2>
-            <ul class="svc-tags" style="font-size: 20px;"><li>Society & presidency campaigns</li><li>Scientific programme planning</li><li>KOL collaborations</li><li>Awards & recognition</li></ul>
-          </div>
+  <!-- Card 1 -->
+  <div class="case-photo-item">
+    <a aria-label="ChargeBlock photo" class="case-photo-card image-placeholder" href="index.html">
+      <img alt="ChargeBlock project" data-original-src="images/chargeblock.png" loading="lazy"/>
+      <span>Medical Leadership</span>
+    </a>
+    <div class="case-thumbnails">
+      <img alt="Medical Leadership thumbnail" data-original-src="images/chargeblock.png" loading="lazy"/>
+    </div>
+  </div>
 
-        </div>
+  <!-- Card 2 -->
+  <div class="case-photo-item">
+    <a aria-label="AESPIRE photo" class="case-photo-card image-placeholder" href="index.html">
+      <img alt="AESPIRE project" data-original-src="images/aespire.png" loading="lazy"/>
+      <span>Website</span>
+    </a>
+    <div class="case-thumbnails">
+      <img alt="Website thumbnail" data-original-src="images/aespire.png" loading="lazy"/>
+    </div>
+  </div>
 
-        
-      </div>
-    </section>
+  <!-- Card 3 -->
+  <div class="case-photo-item">
+    <a aria-label="RobotX photo" class="case-photo-card image-placeholder" href="index.html">
+      <img alt="RobotX project" data-original-src="images/robotx.png" loading="lazy"/>
+      <span>AI Content &amp; Production</span>
+    </a>
+    <div class="case-thumbnails">
+      <img alt="AI Content thumbnail" data-original-src="images/robotx.png" loading="lazy"/>
+    </div>
+  </div>
 
-    <!-- ===== FEATURED CASES ===== -->
-    <section class="cases-section container" data-reveal>
-      <div class="cases-featured-layout">
-        <div class="cases-featured-left">
-          <div class="cases-header-top" style="margin-bottom:36px;">
-            <span class="pill-label" style="font-size:13px;">Featured Cases</span>
-            <h2 class="h2 reveal-text" style="font-size:clamp(1.6rem,2.8vw,2.4rem);font-weight:400;letter-spacing:-0.03em;line-height:1.15;margin-top:16px;">A few projects worth showing. Each one built around a real problem</h2>
-            <p class="body-muted" style="margin-top:12px;">A closer look at the work, the thinking behind it, and what it had to solve.</p>
-          </div>
+  <!-- Card 4 -->
+  <div class="case-photo-item">
+    <a aria-label="Sully.ai photo" class="case-photo-card image-placeholder" href="index.html">
+      <img alt="Sully.ai project" data-original-src="images/sully.png" loading="lazy"/>
+      <span>Websites &amp; Discoverability</span>
+    </a>
+    <div class="case-thumbnails">
+      <img alt="Discoverability thumbnail" data-original-src="images/sully.png" loading="lazy"/>
+    </div>
+  </div>
 
-          <div class="cases-grid-2col">
-        <a href="https://desses.co/cases/chargeblock" class="case-card-v2" target="_blank">
-          <div class="case-v2-img">
-            <!-- <img src="images/chargeblock.png" alt="ChargeBlock" /> -->
-            <!-- <div class="case-overlay-tag">Energy Sector</div> -->
-          </div>
-          <div class="case-v2-info">
-            <span class="case-v2-name">Medical Leadership</span>
-              <h2 style="font-size:14px;font-weight:500;margin:8px 0;color: black;">Dr. Archana Basser</h2>
-            <p>A presidency campaign, run end to end. IG Account</p>
-            <span class="case-v2-arrow">↗</span>
-          </div>
-        </a>
-        <a href="https://aespire.eu/" class="case-card-v2" target="_blank">
-          <div class="case-v2-img">
-            <img src="images/aespire.png" alt="AESPIRE" />
-            <div class="case-overlay-tag">Sharefunding Real Estate</div>
-          </div>
-          <div class="case-v2-info">
-            <span class="case-v2-name">Website</span>
-            <h2 style="font-size:14px;font-weight:500;margin:8px 0;color: black;">ISAR Website</h2>
-            <p>Show the website</p>
-            <span class="case-v2-arrow">↗</span>
-          </div>
-        </a>
-        <a href="https://desses.co/cases/robotx" class="case-card-v2" target="_blank">
-          <div class="case-v2-img">
-            <img src="images/robotx.png" alt="RobotX" />
-            <div class="case-overlay-tag">AI Powered Audit</div>
-          </div>
-          <div class="case-v2-info">
-            <span class="case-v2-name">AI Content & Production</span>
-            <h2 style="font-size:14px;font-weight:500;margin:8px 0;color: black;">Indira IVF Videos</h2>
-            <p>AI films and campaign content for a fertility brand</p>
-            <span class="case-v2-arrow">↗</span>
-          </div>
-        </a>
-        <a href="https://desses.co/cases/sully.ai" class="case-card-v2" target="_blank">
-          <div class="case-v2-img">
-            <img src="images/sully.png" alt="Sully.ai" />
-            <div class="case-overlay-tag">AI Healthcare</div>
-          </div>
-          <div class="case-v2-info">
-            <span class="case-v2-name">Websites & Discoverability</span>
-            <h2 style="font-size:14px;font-weight:500;margin:8px 0;color: black;">Dr. Rohan and Dr. Ameet Patki</h2>
-            <p>A clinic website built to be found and trusted</p>
-            <span class="case-v2-arrow">↗</span>
-          </div>
-        </a>
-        </div>
-        </div>
+</div>
+<div class="broader-cases">
+<p class="broader-label">A broader look at what gets shipped</p>
+<div class="broader-grid">
+<a class="broad-card" data-stagger="" href="https://vandijkenglas.nl/" target="_blank">
+<div class="broad-img image-placeholder"><img alt="Van Dijken Glas" data-original-src="images/glass.png" loading="lazy"/></div>
+<div class="broad-info"><span class="broad-cat">Glass &amp; Architecture</span><strong>Van Dijken Glas</strong><p>Masters in colored glass, family-owned since 1933, co-creating with architects and designers.</p></div>
+</a>
+<a class="broad-card" data-stagger="" href="https://broccoli.eu/" target="_blank">
+<div class="broad-img image-placeholder"><img alt="Broccoli" data-original-src="images/brocoli.png" loading="lazy"/></div>
+<div class="broad-info"><span class="broad-cat">Sustainable Sharefunding</span><strong>Broccoli</strong><p>A platform to invest in sustainable businesses through sharefunding.</p></div>
+</a>
+<a class="broad-card" data-stagger="" href="https://8capital.nl/" target="_blank">
+<div class="broad-img image-placeholder"><img alt="8 Capital Group" data-original-src="images/capital.png" loading="lazy"/></div>
+<div class="broad-info"><span class="broad-cat">Private Capital &amp; VC</span><strong>8 Capital Group</strong><p>Private capital and venture investment, with responsible investing built in.</p></div>
+</a>
+<a class="broad-card" data-stagger="" href="https://1finance.nl/" target="_blank">
+<div class="broad-img image-placeholder"><img alt="1finance" data-original-src="images/finance.png" loading="lazy"/></div>
+<div class="broad-info"><span class="broad-cat">Finance Advisory</span><strong>1finance</strong><p>More than a bookkeeper: full financial and tax support for a fixed monthly fee.</p></div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== STATS ===== -->
+<section class="stats-section" data-reveal="">
+<div class="container stats-inner">
+<h2 class="h2 reveal-text stats-heading">First the patient meets you online, then in person.</h2>
+<div class="stats-copy">
+<p class="body-muted" style="margin-top:18px">Before the first appointment, a patient has usually looked at your Google listing, your website, your reviews and your social media. If those tell different stories, trust drops before you’ve said a word.</p>
+</div>
+<div class="stats-numbers">
+<div class="stat" data-stagger="">
+<div class="stat-num count-up" data-suffix="%" data-target="84">0%</div>
+<p class="stat-desc">of patients check online reviews before choosing a provider.</p>
+</div>
+<div class="stat" data-stagger="">
+<div class="stat-num count-up" data-suffix="%" data-target="31">0%</div>
+<p class="stat-desc">use generative AI, such as ChatGPT or Google AI, to research about their disea se.</p>
+</div>
+</div>
+<div class="stats-award-footer">
+<div class="award-badge">Source: Rater8 patient survey (US), 2025.</div>
+</div>
+</div>
+</section>
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" data-reveal="" id="testimonials">
+<div class="page-wrap testimonial-stage" style="padding-left: 30px;">
+<article class="testi-heading">
+<h2>Most of our clients stay for years.</h2>
+<p>Once the product is live it doesn’t sit still. It keeps getting sharper.</p>
+</article>
+<div aria-label="Client testimonials" class="review-window" tabindex="0">
+<div class="review-track">
+<article class="quote-card">
+<blockquote>Oskar is a highly competent designer who excels at combining business goals with user-friendly design. His curiosity and design expertise make him a reliable professional capable of elevating a design to the next level.</blockquote>
+<div class="quote-by"><img alt="" class="quote-avatar" data-original-src="images/filip.png" loading="lazy"/><div><strong>Filip Breeman</strong><small>CEO, ChargeBlock</small></div></div>
+</article>
+<article class="quote-card">
+<blockquote>Desses has helped us for years with Branding &amp; Online Marketing. Happy with his dedication and work he has delivered for Game Hero.</blockquote>
+<div class="quote-by"><img alt="" class="quote-avatar" data-original-src="images/boris.png" loading="lazy"/><div><strong>Boris Burkhardt</strong><small>Co-founder, Game Hero</small></div></div>
+</article>
+<article class="quote-card">
+<blockquote>A really great collaboration, grateful for all your hard work!</blockquote>
+<div class="quote-by"><img alt="" class="quote-avatar" data-original-src="images/wouter.png" loading="lazy"/><div><strong>Wouter Hagoort</strong><small>Founder, Broccoli B.V.</small></div></div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== PRICING ===== -->
+<section class="pricing-section" data-reveal="">
+<div class="container">
+<span class="pill-label">Personalised Plans</span>
+<h2 class="h2 reveal-text" style="max-width:640px;margin-top:16px">We are not a factory, so we don't have fixed packages. Every service is customized for you.</h2>
+<p class="body-muted" style="margin-top:12px;max-width:560px">We don’t make reels, videos or websites off a conveyor belt. We start with what you need, then build the plan around it. If we’re not the right fit, we’ll tell you..</p>
+<div class="pricing-grid">
+<!-- Growth -->
+<div class="price-card" data-stagger="">
+<div class="price-top">
+<div class="price-type">Subscription</div>
+<h3 class="price-name">Growth</h3>
+<div class="price-amount-wrap"><span class="price-big">$4,500</span><span class="price-mo">/month</span></div>
+<div class="price-eur">€4.000/month</div>
+<p class="price-desc">Ideal for refining existing pages, improving conversion flows, and expanding your site with new components and features as your product matures.</p>
+<a class="btn-pill-dark magnetic" href="https://desses.co/contact" style="width:100%;justify-content:center" target="_blank">Book an Intro Call</a>
+</div>
+<div class="price-features">
+<p class="price-feat-label">What's included</p>
+<ul>
+<li><span class="check">✓</span>One active request at a time</li>
+<li><span class="check">✓</span>Average 48 hour turnaround</li>
+<li><span class="check">✓</span>Design updates every 48 hours</li>
+<li><span class="check">✓</span>Unlimited revisions</li>
+<li><span class="check">✓</span>Product &amp; Website Design + Framer / AI Development</li>
+<li><span class="check">✓</span>Seamless workflow via Slack &amp; Notion</li>
+</ul>
+</div>
+</div>
+<!-- Immersive -->
+<div class="price-card price-card--featured" data-stagger="">
+<div class="price-top">
+<div class="price-type">Subscription</div>
+<h3 class="price-name">Immersive</h3>
+<div class="price-amount-wrap"><span class="price-big">$8,500</span><span class="price-mo">/month</span></div>
+<div class="price-eur">€7.500/month</div>
+<p class="price-desc">For teams moving fast. Unlimited active requests, one to two sync calls a week, and the full stack running at full speed.</p>
+<a class="btn-pill-dark magnetic" href="https://desses.co/contact" style="width:100%;justify-content:center" target="_blank">Book an Intro Call</a>
+</div>
+<div class="price-features">
+<p class="price-feat-label">What's included</p>
+<ul>
+<li><span class="check">✓</span>Unlimited active requests</li>
+<li><span class="check">✓</span>Average 24 hour turnaround</li>
+<li><span class="check">✓</span>1–2 sync calls per week</li>
+<li><span class="check">✓</span>Unlimited revisions</li>
+<li><span class="check">✓</span>Product &amp; Website Design + Framer / AI Development</li>
+<li><span class="check">✓</span>Seamless workflow via Slack &amp; Notion</li>
+</ul>
+</div>
+</div>
+<!-- Quick Launch -->
+<div class="price-card" data-stagger="">
+<div class="price-top">
+<div class="price-type">Fast Turnaround</div>
+<h3 class="price-name">Quick Launch</h3>
+<div class="price-amount-wrap"><span class="price-from">From </span><span class="price-big">$8,000</span></div>
+<div class="price-eur">From €7.000</div>
+<p class="price-desc">One project, one scope, one fixed price agreed before anything starts. End to end, updates every 48–72 hours.</p>
+<a class="btn-pill-dark magnetic" href="https://desses.co/contact" style="width:100%;justify-content:center" target="_blank">Book an Intro Call</a>
+</div>
+<div class="price-features">
+<p class="price-feat-label">What's included</p>
+<ul>
+<li><span class="check">✓</span>Fixed scope &amp; price</li>
+<li><span class="check">✓</span>Updates every 48–72 hours</li>
+<li><span class="check">✓</span>Design &amp; development in one flow</li>
+<li><span class="check">✓</span>Unlimited revisions</li>
+<li><span class="check">✓</span>Full handover &amp; documentation</li>
+<li><span class="check">✓</span>You own everything</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== FAQ ===== -->
+<div class="faq-contact-layout"><section class="faq-section container" data-reveal="">
+<h2 class="h2 reveal-text" style="max-width:600px;margin-bottom:12px">Not sure what you need yet? That’s okay.</h2>
+<p class="body-muted" style="margin-bottom:48px;max-width:500px">Here’s what doctors ask us first.</p>
+<div class="faq-list">
+<div class="faq-item"><button aria-expanded="false" class="faq-btn">Do you have fixed packages?<svg class="faq-chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 16 16"><path d="M3 6l5 5 5-5"></path></svg></button><div class="faq-body"><p>No. Every doctor needs something different, so we don’t sell ready-made packages. We start with a conversation and build the plan from there.</p></div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-btn">Do you know the NMC guidelines?<svg class="faq-chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 16 16"><path d="M3 6l5 5 5-5"></path></svg></button><div class="faq-body"><p>Yes. The NMC issued its ethical advertising guidelines for doctors and hospitals on 6 October 2026, and we plan our work around them. Before anything goes out, we tell you what’s fine, what needs changing and what we won’t do. For a formal legal opinion on your own case, we’d still point you to your own counsel.</p></div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-btn">Can you guarantee 200 patients in a month?<svg class="faq-chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 16 16"><path d="M3 6l5 5 5-5"></path></svg></button><div class="faq-body"><p>No. Be careful with anyone who does. How many patients walk in depends on your specialty, location, fees and availability, and no agency controls those. A promised number usually comes from bought clicks, inflated engagement or fake reviews, and the NMC guidelines prohibit manipulating followers, reviews and ratings. We’ll tell you what’s realistic, and what won’t work.</p></div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-btn">How does pricing work?<svg class="faq-chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 16 16"><path d="M3 6l5 5 5-5"></path></svg></button><div class="faq-body"><p>It depends on the work, so we quote after we understand what you need, and we put it in writing before anything starts.</p></div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-btn">Do you work with hospitals as well as individual doctors?<svg class="faq-chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 16 16"><path d="M3 6l5 5 5-5"></path></svg></button><div class="faq-body"><p>Yes. We work with solo doctors, clinics, hospitals, medical societies and health brands, and the work is planned around each one.</p></div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-btn">Do you work with doctors outside Mumbai?<svg class="faq-chevron" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 16 16"><path d="M3 6l5 5 5-5"></path></svg></button><div class="faq-body"><p>Yes. We work with doctors, clinics and hospitals across India, mostly by call and message.</p></div></div>
+</div>
+</section><section class="founder-section" data-reveal="">
+<div class="container founder-inner">
+<div class="founder-left">
+<p class="founder-name">Mayank Chapanera</p>
+<p class="founder-title">Founder, Regis Digitals</p>
+</div>
+<p class="founder-desc">Tell me what you’re trying to do: more patients, a stronger name, a campaign, or just a second opinion on what you’re doing now. I’ll tell you honestly what I’d do, and whether it’s worth doing at all.</p>
+<div class="founder-actions">
+<a class="btn-pill-dark magnetic" href="https://desses.co/contact" target="_blank">Book an Intro Call</a>
+<a class="hero-email" href="mailto:mayank@regisdigitals.com" style="margin-top:10px;display:block;font-size: 15px;color:black">↪ mayank@regisdigitals.com</a> <span class="text-dim">Based in Mumbai. Working with doctors across India. We reply within 24 hours.</span>
+</div>
+</div>
+</section></div>
+<!-- ===== FOUNDER CTA ===== -->
 
-        <div class="cases-featured-right">
-        <div class="cases-photo-grid">
-          <a href="index.html" class="case-photo-card" aria-label="ChargeBlock photo, home page">
-            <img src="images/chargeblock.png" alt="ChargeBlock project" />
-            <span>Medical Leadership</span>
-          </a>
-          <a href="index.html" class="case-photo-card" aria-label="AESPIRE photo, home page">
-            <img src="images/aespire.png" alt="AESPIRE project" />
-            <span>Website</span>
-          </a>
-          <a href="index.html" class="case-photo-card" aria-label="RobotX photo, home page">
-            <img src="images/robotx.png" alt="RobotX project" />
-            <span>AI Content & Production</span>
-          </a>
-          <a href="index.html" class="case-photo-card" aria-label="Sully.ai photo, home page">
-            <img src="images/sully.png" alt="Sully.ai project" />
-            <span>Websites & Discoverability</span>
-          </a>
-        </div>
-          <div class="broader-cases">
-            <p class="broader-label">A broader look at what gets shipped</p>
-            <div class="broader-grid">
-              <a href="https://vandijkenglas.nl/" class="broad-card" target="_blank" data-stagger>
-                <div class="broad-img"><img src="images/glass.png" alt="Van Dijken Glas" /></div>
-                <div class="broad-info"><span class="broad-cat">Glass &amp; Architecture</span><strong>Van Dijken Glas</strong><p>Masters in colored glass, family-owned since 1933, co-creating with architects and designers.</p></div>
-              </a>
-              <a href="https://broccoli.eu/" class="broad-card" target="_blank" data-stagger>
-                <div class="broad-img"><img src="images/brocoli.png" alt="Broccoli" /></div>
-                <div class="broad-info"><span class="broad-cat">Sustainable Sharefunding</span><strong>Broccoli</strong><p>A platform to invest in sustainable businesses through sharefunding.</p></div>
-              </a>
-              <a href="https://8capital.nl/" class="broad-card" target="_blank" data-stagger>
-                <div class="broad-img"><img src="images/capital.png" alt="8 Capital Group" /></div>
-                <div class="broad-info"><span class="broad-cat">Private Capital &amp; VC</span><strong>8 Capital Group</strong><p>Private capital and venture investment, with responsible investing built in.</p></div>
-              </a>
-              <a href="https://1finance.nl/" class="broad-card" target="_blank" data-stagger>
-                <div class="broad-img"><img src="images/finance.png" alt="1finance" /></div>
-                <div class="broad-info"><span class="broad-cat">Finance Advisory</span><strong>1finance</strong><p>More than a bookkeeper: full financial and tax support for a fixed monthly fee.</p></div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== STATS ===== -->
-    <section class="stats-section" data-reveal>
-      <div class="container stats-inner">
-        <h2 class="h2 reveal-text stats-heading">First the patient meets you online, then in person.</h2>
-        <div class="stats-copy">
-          <p class="body-muted" style="margin-top:18px">Before the first appointment, a patient has usually looked at your Google listing, your website, your reviews and your social media. If those tell different stories, trust drops before you’ve said a word.</p>
-        </div>
-        <div class="stats-numbers">
-          <div class="stat" data-stagger>
-            <div class="stat-num count-up" data-target="20" data-prefix="€" data-suffix="m">0%</div>
-            <p class="stat-desc">Client revenue and funding supported through results-driven design and development.</p>
-          </div>
-          <div class="stat" data-stagger>
-            <div class="stat-num count-up" data-target="56" data-suffix="+">0+</div>
-            <p class="stat-desc">Teams partnered with to design and build digital products that deliver impact.</p>
-          </div>
-        </div>
-        <div class="stats-award-footer">
-          <div class="award-badge">Check more awards and recognitions</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== TESTIMONIALS ===== -->
-    <section class="testimonials-section container" data-reveal>
-      <div class="testi-header">
-        <h2 class="h2 reveal-text">70% of clients stay for years</h2>
-        <p class="body-muted" style="margin-top:10px">Once the product is live it doesn't sit still. It keeps getting sharper.</p>
-      </div>
-      <div class="testi-grid">
-        <div class="testi-card" data-stagger>
-          <p class="testi-quote">"Oskar is a highly competent designer who excels at combining business goals with user-friendly design. His curiosity and design expertise make him a reliable professional capable of elevating a design to the next level."</p>
-          <div class="testi-author">
-            <img src="images/filip.png" alt="Filip Breeman" class="testi-avatar" />
-            <div><div class="testi-name">Filip Breeman</div><div class="testi-role">CEO, ChargeBlock</div></div>
-          </div>
-        </div>
-        <div class="testi-card" data-stagger>
-          <p class="testi-quote">"Desses has helped us for years with Branding &amp; Online Marketing. Happy with his dedication and work he has delivered for Game Hero."</p>
-          <div class="testi-author">
-            <img src="images/boris.png" alt="Boris Burkhardt" class="testi-avatar" />
-            <div><div class="testi-name">Boris Burkhardt</div><div class="testi-role">Co-founder, Game Hero</div></div>
-          </div>
-        </div>
-        <div class="testi-card" data-stagger>
-          <p class="testi-quote">"A really great collaboration, grateful for all your hard work!"</p>
-          <div class="testi-author">
-            <img src="images/wouter.png" alt="Wouter Hagoort" class="testi-avatar" />
-            <div><div class="testi-name">Wouter Hagoort</div><div class="testi-role">Founder, Broccoli B.V.</div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PRICING ===== -->
-    <section class="pricing-section" data-reveal>
-      <div class="container">
-        <span class="pill-label">Personalised Plans</span>
-        <h2 class="h2 reveal-text" style="max-width:640px;margin-top:16px">Flexible ways to work together, designed around your pace, your goals, and the way you grow</h2>
-        <p class="body-muted" style="margin-top:12px;max-width:560px">Every plan starts with a 30 minute call. We talk through the work, the timing, and what makes sense to spend. If the fit is right, we move. If it isn't, no problem.</p>
-
-        <div class="pricing-grid">
-          <!-- Growth -->
-          <div class="price-card" data-stagger>
-            <div class="price-top">
-              <div class="price-type">Subscription</div>
-              <h3 class="price-name">Growth</h3>
-              <div class="price-amount-wrap"><span class="price-big">$4,500</span><span class="price-mo">/month</span></div>
-              <div class="price-eur">€4.000/month</div>
-              <p class="price-desc">Ideal for refining existing pages, improving conversion flows, and expanding your site with new components and features as your product matures.</p>
-              <a href="https://desses.co/contact" class="btn-pill-dark magnetic" style="width:100%;justify-content:center" target="_blank">Book an Intro Call</a>
-            </div>
-            <div class="price-features">
-              <p class="price-feat-label">What's included</p>
-              <ul>
-                <li><span class="check">✓</span>One active request at a time</li>
-                <li><span class="check">✓</span>Average 48 hour turnaround</li>
-                <li><span class="check">✓</span>Design updates every 48 hours</li>
-                <li><span class="check">✓</span>Unlimited revisions</li>
-                <li><span class="check">✓</span>Product &amp; Website Design + Framer / AI Development</li>
-                <li><span class="check">✓</span>Seamless workflow via Slack &amp; Notion</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Immersive -->
-          <div class="price-card price-card--featured" data-stagger>
-            <div class="price-top">
-              <div class="price-type">Subscription</div>
-              <h3 class="price-name">Immersive</h3>
-              <div class="price-amount-wrap"><span class="price-big">$8,500</span><span class="price-mo">/month</span></div>
-              <div class="price-eur">€7.500/month</div>
-              <p class="price-desc">For teams moving fast. Unlimited active requests, one to two sync calls a week, and the full stack running at full speed.</p>
-              <a href="https://desses.co/contact" class="btn-pill-dark magnetic" style="width:100%;justify-content:center" target="_blank">Book an Intro Call</a>
-            </div>
-            <div class="price-features">
-              <p class="price-feat-label">What's included</p>
-              <ul>
-                <li><span class="check">✓</span>Unlimited active requests</li>
-                <li><span class="check">✓</span>Average 24 hour turnaround</li>
-                <li><span class="check">✓</span>1–2 sync calls per week</li>
-                <li><span class="check">✓</span>Unlimited revisions</li>
-                <li><span class="check">✓</span>Product &amp; Website Design + Framer / AI Development</li>
-                <li><span class="check">✓</span>Seamless workflow via Slack &amp; Notion</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Quick Launch -->
-          <div class="price-card" data-stagger>
-            <div class="price-top">
-              <div class="price-type">Fast Turnaround</div>
-              <h3 class="price-name">Quick Launch</h3>
-              <div class="price-amount-wrap"><span class="price-from">From </span><span class="price-big">$8,000</span></div>
-              <div class="price-eur">From €7.000</div>
-              <p class="price-desc">One project, one scope, one fixed price agreed before anything starts. End to end, updates every 48–72 hours.</p>
-              <a href="https://desses.co/contact" class="btn-pill-dark magnetic" style="width:100%;justify-content:center" target="_blank">Book an Intro Call</a>
-            </div>
-            <div class="price-features">
-              <p class="price-feat-label">What's included</p>
-              <ul>
-                <li><span class="check">✓</span>Fixed scope &amp; price</li>
-                <li><span class="check">✓</span>Updates every 48–72 hours</li>
-                <li><span class="check">✓</span>Design &amp; development in one flow</li>
-                <li><span class="check">✓</span>Unlimited revisions</li>
-                <li><span class="check">✓</span>Full handover &amp; documentation</li>
-                <li><span class="check">✓</span>You own everything</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== FAQ ===== -->
-    <section class="faq-section container" data-reveal>
-      <h2 class="h2 reveal-text" style="max-width:600px;margin-bottom:12px">Not sure which plan fits yet? That's okay.</h2>
-      <p class="body-muted" style="margin-bottom:48px;max-width:500px">Everything you need to know before choosing a plan</p>
-      <div class="faq-list">
-        <div class="faq-item"><button class="faq-btn" aria-expanded="false">How does the subscription work?<svg class="faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l5 5 5-5"/></svg></button><div class="faq-body"><p>You pick a plan, we start, and you send requests through Slack or Notion. Work comes back every 48 hours on Growth and every 24 on Immersive, whether or not there's a call in the calendar. It's monthly and you can cancel at the end of any month. No contract you have to escape from.</p></div></div>
-        <div class="faq-item"><button class="faq-btn" aria-expanded="false">What kind of requests can I submit?<svg class="faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l5 5 5-5"/></svg></button><div class="faq-body"><p>Product design, website design, Framer development and AI work. New pages, redesigns, a component that doesn't exist yet, a flow that isn't working, a dashboard, an integration. If it sits inside design, Framer or the AI layer, it's in scope.</p></div></div>
-        <div class="faq-item"><button class="faq-btn" aria-expanded="false">How fast will I receive updates?<svg class="faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l5 5 5-5"/></svg></button><div class="faq-body"><p>Growth averages 48 hours per request. Immersive averages 24. Those are averages rather than promises on a specific item. What is a promise: you always know where a request stands without having to ask.</p></div></div>
-        <div class="faq-item"><button class="faq-btn" aria-expanded="false">Is there a limit to how many requests I can make?<svg class="faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l5 5 5-5"/></svg></button><div class="faq-body"><p>Growth runs one active request at a time. You can queue as many as you like and they move through in the order you set. Immersive runs unlimited active requests plus one or two sync calls a week.</p></div></div>
-        <div class="faq-item"><button class="faq-btn" aria-expanded="false">What if I only need you for a short time?<svg class="faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l5 5 5-5"/></svg></button><div class="faq-body"><p>Then a subscription is the wrong shape and Quick Launch is the right one. A defined project, a fixed price agreed before anything starts, from $8,000 / €7,000.</p></div></div>
-        <div class="faq-item"><button class="faq-btn" aria-expanded="false">What if I don't like the direction?<svg class="faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l5 5 5-5"/></svg></button><div class="faq-body"><p>Say so, early and plainly. Revisions are unlimited on both subscriptions and nobody is counting. If it stays wrong, you cancel at the end of the month.</p></div></div>
-        <div class="faq-item"><button class="faq-btn" aria-expanded="false">Who will I work with?<svg class="faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l5 5 5-5"/></svg></button><div class="faq-body"><p>Me, Oskar. I lead the work and I'm on every call. No account manager, no team you never meet. 70% of clients stay for years, and that's most of the reason why.</p></div></div>
-        <div class="faq-item"><button class="faq-btn" aria-expanded="false">How do we communicate?<svg class="faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l5 5 5-5"/></svg></button><div class="faq-body"><p>Slack for the day to day and Notion for the work itself, so nothing lives in an inbox. Async by default, with calls when they earn one.</p></div></div>
-        <div class="faq-item"><button class="faq-btn" aria-expanded="false">Is Fast Turnaround better than a subscription?<svg class="faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l5 5 5-5"/></svg></button><div class="faq-body"><p>Different jobs. Quick Launch is for something with a finish line. A subscription is for a company producing new pages every month, where there is no finish line. If you're not sure which you are, the intro call sorts it in ten minutes.</p></div></div>
-        <div class="faq-item"><button class="faq-btn" aria-expanded="false">Can Fast Turnaround turn into a subscription?<svg class="faq-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6l5 5 5-5"/></svg></button><div class="faq-body"><p>Yes, and it usually does. A project ends, the site goes live, and a month later there are three new pages to build. It also works the other way: pause the subscription, come back per project.</p></div></div>
-      </div>
-    </section>
-
-    <!-- ===== FOUNDER CTA ===== -->
-    <section class="founder-section" data-reveal>
-      <div class="container founder-inner">
-        <div class="founder-left">
-          <p class="founder-name">Oskar Mieta</p>
-          <p class="founder-title">Founder, Designer &amp; Developer</p>
-        </div>
-        <p class="founder-desc">If you want to start a project, explore a collaboration, or simply talk things through, this is the easiest place to begin.</p>
-        <div class="founder-actions">
-          <a href="https://desses.co/contact" class="btn-pill-dark magnetic" target="_blank">Book an Intro Call</a>
-          <a href="mailto:contact@desses.co" class="link-muted">↪ contact@desses.co</a>
-          <span class="text-dim">Based in Rotterdam, NL. Working Worldwide.</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== FINAL CTA ===== -->
-    <section class="final-cta container" id="contact" data-reveal>
-      <span class="pill-label">Let's talk</span>
-      <h2 class="h2 reveal-text" style="max-width:700px;margin-top:20px">If you want to start a project, explore a collaboration, or simply talk things through, this is the easiest place to begin</h2>
-      <a href="https://desses.co/contact" class="btn-pill-dark btn-lg magnetic" style="margin-top:32px" target="_blank">
-        Book a 30min Intro Call
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/></svg>
-      </a>
-    </section>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer-top">
-      <div class="footer-studio">
-        <p class="footer-logo">Desses</p>
-        <address>Ebenhaezerstraat 9C<br>3083RC, Rotterdam<br>The Netherlands</address>
-        <a href="mailto:contact@desses.co" class="footer-link">↪ contact@desses.co</a>
-        <p class="text-dim" style="margin-top:4px;font-size:12px">Based in Rotterdam, NL. Working Worldwide.</p>
-      </div>
-      <div class="footer-nav">
-        <div class="footer-col">
-          <h5>Company</h5>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="https://desses.co/contact" target="_blank">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5>Connect</h5>
-          <ul>
-            <li><a href="https://www.linkedin.com/in/desses" target="_blank">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/desses_co/" target="_blank">Instagram</a></li>
-            <li><a href="https://x.com/oskarmieta" target="_blank">x.com</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-badges">
-        <div class="footer-badge">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta container" data-reveal="" id="contact">
+<span class="pill-label">Let's talk</span>
+<h2 class="h2 reveal-text" style="max-width:700px;margin-top:20px">You don’t need to know what to ask for. Tell us what you’re trying to do, and we’ll work out the rest together.</h2>
+<a class="btn-pill-dark btn-lg magnetic" href="https://desses.co/contact" style="margin-top:32px" target="_blank">
+        Book a Call
+        <svg fill="currentColor" height="13" viewbox="0 0 16 16" width="13"><path d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z" fill-rule="evenodd"></path></svg>
+</a>
+</section>
+</main>
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+<div class="container footer-top">
+<div class="footer-studio">
+<p class="footer-logo">Regis Digitals</p>
+<p>A medical marketing agency.</p>
+<address>Ebenhaezerstraat 9C<br/>3083RC, Rotterdam<br/>The Netherlands</address>
+<a class="hero-email" href="mailto:mayank@regisdigitals.com" style="margin-top:10px;display:block;font-size: 12px;color:grey">mayank@regisdigitals.com</a>
+<p class="text-dim">Regis Digitals is a marketing agency. Nothing on this site is medical advice.</p>
+</div>
+<div class="footer-nav">
+<div class="footer-col">
+<h5>Company</h5>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="https://desses.co/contact" target="_blank">Contact</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h5>Connect</h5>
+<ul>
+<li><a href="https://www.linkedin.com/in/desses" target="_blank">LinkedIn</a></li>
+<li><a href="https://www.instagram.com/desses_co/" target="_blank">Instagram</a></li>
+<li><a href="https://x.com/oskarmieta" target="_blank">x.com</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-badges">
+<div class="footer-badge">
+<svg fill="none" height="12" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="12"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
           Framer Pro Expert
         </div>
-        <div class="footer-badge">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+<div class="footer-badge">
+<svg fill="none" height="12" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="12"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
           Framer Partner
         </div>
-        <div class="footer-badge">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+<div class="footer-badge">
+<svg fill="none" height="12" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="12"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8M12 8v8"></path></svg>
           Working with Y Combinator partners
         </div>
-      </div>
-    </div>
-    <div class="footer-bottom container">
-      <span>© 2018 — 2026 Desses. All rights reserved</span>
-      <span>VAT: NL002528092B50 — KVK: 71601112</span>
-      <div class="footer-legal">
-        <a href="https://desses.co/policies/terms-conditions" target="_blank">Terms &amp; Conditions</a>
-        <span>—</span>
-        <a href="https://desses.co/policies/privacy-policy" target="_blank">Privacy Policy</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+</div>
+</div>
+<div class="footer-bottom container">
+<span>© 2018 — 2026 Desses. All rights reserved</span>
+<span>VAT: NL002528092B50 — KVK: 71601112</span>
+<div class="footer-legal">
+<a href="https://desses.co/policies/terms-conditions" target="_blank">Terms &amp; Conditions</a>
+<span>—</span>
+<a href="https://desses.co/policies/privacy-policy" target="_blank">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
